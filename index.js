@@ -13,7 +13,7 @@ const connectionOptions = { useUnifiedTopology: true, useNewUrlParser: true, use
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb://localhost/todolist", connectionOptions)
+mongoose.connect("mongodb+srv://krosales23:karen@cluster0.8vhfy.mongodb.net/test", connectionOptions)
     .then(() => console.log("Connected successfully"))
     .catch((err) => console.error(err));
 
